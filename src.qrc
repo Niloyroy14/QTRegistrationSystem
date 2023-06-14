@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>C:/Users/asus/Downloads/login.jpg</file>
+        <file>C:/Users/asus/Downloads/register.png</file>
+        <file>C:/Users/asus/Downloads/bg.png</file>
+        <file>C:/Users/asus/Downloads/header.jpeg</file>
+    </qresource>
+</RCC>
