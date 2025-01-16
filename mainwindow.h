@@ -7,7 +7,10 @@
 #include <QMessageBox>
 #include "mydialog.h"
 #include "connection.h"
-#include  "register.h"
+#include "register.h"
+#include "profile.h"
+#include "mydialog.h"
+
 
 
 namespace Ui {
@@ -24,16 +27,20 @@ public:
 
      connection connDB;
 
+
 private slots:
 
     void on_loginBtn_clicked();
 
     void on_registerDailougOpen_clicked();
 
+    void openDialog(int userId);
+
 private:
     Ui::MainWindow *ui;
     Register *registerDailouge;
-
+    Profile  *profileDailouge;
+    MyDialog *mynewdailouge;
 };
 
 #endif // MAINWINDOW_H

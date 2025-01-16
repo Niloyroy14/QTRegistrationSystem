@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1193</width>
-    <height>656</height>
+    <width>1323</width>
+    <height>728</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,7 +28,7 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>1151</width>
+      <width>1281</width>
       <height>71</height>
      </rect>
     </property>
@@ -51,7 +51,8 @@
        <widget class="QWidget" name="loginIcon" native="true">
         <property name="styleSheet">
          <string notr="true">#loginIcon{
-    border-image:url(:/images/C:/Users/asus/Downloads/login.jpg);
+  
+   border-image:url(:/images/C:/Users/asus/Downloads/login.jpg);
 }</string>
         </property>
        </widget>
@@ -84,8 +85,8 @@ color:white;
      <rect>
       <x>20</x>
       <y>90</y>
-      <width>1151</width>
-      <height>541</height>
+      <width>1281</width>
+      <height>611</height>
      </rect>
     </property>
     <property name="font">

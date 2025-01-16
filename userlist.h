@@ -2,27 +2,29 @@
 #define USERLIST_H
 
 #include <QDialog>
-#include <QtSql>
-#include <QSqlDatabase>
-#include <QMessageBox>
 #include "connection.h"
+#include <QSqlTableModel>
+#include <QTableView>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlQueryModel>
+#include <QMessageBox>
 
 namespace Ui {
-class UserList;
+class userlist;
 }
 
-class UserList : public QDialog
+class userlist : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit UserList(QWidget *parent = nullptr);
-    ~UserList();
-     connection connDB;
+    explicit userlist(QWidget *parent = nullptr);
+    ~userlist();
+    connection connDB;
 
 private:
-    Ui::UserList *ui;
-    QSqlQueryModel *querymodel;
+    Ui::userlist *ui;
 };
 
 #endif // USERLIST_H

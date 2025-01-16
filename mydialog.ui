@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1053</width>
-    <height>356</height>
+    <height>395</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -33,25 +33,45 @@
     <string>Welcome to our system</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>410</x>
+     <x>360</x>
      <y>140</y>
-     <width>181</width>
-     <height>28</height>
+     <width>331</width>
+     <height>83</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>User List</string>
-   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>User List</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="profileBtn">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Profile</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

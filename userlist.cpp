@@ -1,23 +1,37 @@
 #include "userlist.h"
 #include "ui_userlist.h"
+#include <QDebug>
 
-UserList::UserList(QWidget *parent) :
+
+userlist::userlist(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::UserList)
+    ui(new Ui::userlist)
 {
     ui->setupUi(this);
 
     if(connDB.dbConnectionOpen()){
 
-        querymodel = new QSqlQueryModel();
+          QSqlQueryModel  *querymodel = new QSqlQueryModel();
 
-        querymodel->setQuery("SELECT * FROM users");
-        ui->tableView->setModel(querymodel);
+            querymodel->setQuery("SELECT id,username,phone,email FROM users");
+            querymodel->setHeaderData(0, Qt::Horizontal, tr("ID"));
+            querymodel->setHeaderData(1, Qt::Horizontal, tr("User Name"));
+            querymodel->setHeaderData(2, Qt::Horizontal, tr("Phone"));
+            querymodel->setHeaderData(3, Qt::Horizontal, tr("Email"));
+            querymodel->setHeaderData(4, Qt::Horizontal, tr("Image"));
 
+         //   QString imagePath = querymodel->data(querymodel->index(5, 1)).toString();
+           // qDebug()<<imagePath;
+
+            ui->tableView->setModel(querymodel);
+
+
+            connDB.close();
     }
+
 }
 
-UserList::~UserList()
+userlist::~userlist()
 {
     delete ui;
 }

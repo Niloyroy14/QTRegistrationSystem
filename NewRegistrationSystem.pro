@@ -28,23 +28,26 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     connection.cpp \
-    userlist.cpp \
     mydialog.cpp \
-    register.cpp
+    register.cpp \
+    profile.cpp \
+    userlist.cpp
 
 HEADERS += \
         mainwindow.h \
     connection.h \
-    userlist.h \
     mydialog.h \
-    register.h
+    register.h \
+    profile.h \
+    userlist.h
 
 FORMS += \
         mainwindow.ui \
     connection.ui \
-    userlist.ui \
     mydialog.ui \
-    register.ui
+    register.ui \
+    profile.ui \
+    userlist.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
